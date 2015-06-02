@@ -1,0 +1,94 @@
+
+
+.producto img{
+	width: 100%;
+	
+}
+
+.producto{
+	width: 25%;
+	float: left;
+	padding: 4px;
+	margin: 4px;
+	/*
+	border: 2px solid;
+	border-radius: 15px;
+	border-color: black;
+
+	box-shadow: -5px -5px 5px grey;
+	*/
+
+}
+
+
+#logo{
+
+	width: 250;
+	height: 65;
+}
+
+
+
+.content{
+	/*clear:both;*/
+	text-align: center;
+}
+
+.content p{
+	text-align: left;
+}
+
+
+header {
+	margin: 5px 5px 5px 5px;
+	padding: 12px 12px 12px 12px;
+	text-align: center;
+	font-size: small;
+	background: white !important;
+	color: black !important;
+	border-top: 3px solid !important;
+	border-bottom: 3px solid !important;
+	/*border-radius: 10px;
+	border-color: #4D4C4C !important;
+	box-shadow: 5px 5px 15px #ADACAC !important;*/
+	text-shadow: 0px 0px 0px white !important;
+
+}
+.encabezado_ficha{
+	height: 35px;
+}
+
+.content_ficha{
+	font-size: small;
+}
+
+
+header .ui-btn-icon-left { /*Averiguamos la clase que le da jquery mobile al boton que queramos (en este caso el de "back" y lo modificamos
+	width: 75px;
+
+	border-radius: 10px;
+	background: #591D35; este es un color de fondo granate*/
+	background: black;
+}
+
+.botoninicio{
+	width: 45%;
+	/*background: white;*/
+}
+
+.img_boton{
+	width: 50%;
+}
+
+.icono_mapa{
+	width: 20px;
+	height: 20px;
+}
+
+.icono_mapa_txt{
+	font-size: x-small;
+}
+.enlacemapa{
+	color: black !important;
+	font-size: small;
+}

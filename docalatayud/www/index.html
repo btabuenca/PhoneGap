@@ -1,0 +1,427 @@
+<html>
+	<head>
+		<title> D.O. Calatayud </title>
+		<!-- TIENEN QUE IR EN ESTE ORDEN!!!!!!!
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		
+		
+		OJO SI QUIERES LA APLICACIÓN SIN ACCESO A INTERNET NECESITAS DESCARGAR TODO EL PAQUETE JQUERYMOBILE-->
+		<link rel="stylesheet" href="./css/jquery.mobile-1.2.0.min.css">
+		<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.mobile-1.2.0.min.js"></script>
+		
+		
+		
+		<script type="text/javascript" src="./js/codigo.js"></script>
+		<link rel="stylesheet" href="./css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script type="text/javascript" charset="utf-8" src="./cordova-2.4.0.js"></script>
+		
+		<!--PARA LOS MAPAS 
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="https://raw.github.com/HPNeo/gmaps/master/gmaps.js"></script>
+		-->
+	
+	</head>
+
+	<body>	
+		<!-- Página de inicio -->
+		<section id="inicio" data-role="page" data-theme="d"> <!-- data-theme="b" --><!-- Para cambiar el aspecto de las páginas  hay 4 temas a, b, c, d -->
+			<header data-role="header">
+				<img id="logo" src="./img/logo.png"> 
+			</header>
+			
+			<div class="content" data-role="content">
+
+					<a id="btnservicios" class="botoninicio" href="#servicios" data-role="button" data-mini="true" data-inline="true">
+						Bodegas <br>
+						<img class="img_boton" src="./img/bodegas_negro.png"> 
+					</a>
+					<a id="btncatalogo" class="botoninicio" href="#catalogo" data-role="button" data-mini="true" data-inline="true">
+						Catálogo <br>
+						<img class="img_boton" src="./img/productos_negro.png"> 
+					</a>
+					<a id="btnvideo" class="botoninicio" href="#presentacion" data-role="button" data-mini="true" data-inline="true">
+						Presentación<br>
+						<img class="img_boton" src="./img/presenta_negro.png"> 
+					</a>
+					<a id="btnmapa" class="botoninicio" href="#localizacion" data-role="button" data-mini="true" data-inline="true">
+						Localización<br>
+						<img class="img_boton" src="./img/localiza_negro.png"> 
+					</a>	
+					<center>
+					<a id="btnrutas" class="botoninicio" href="#rutas" data-role="button" data-mini="true" data-inline="true">
+						Rutas<br>
+						<img class="img_boton" src="./img/rutas_negro.png"> 
+					</a>
+					</center>
+		
+			</div>
+				
+		</section>
+		
+		<!-- Página explicatoria de los servicios que ofrecemos-->
+		<section id="servicios" data-role="page" data-theme="d">
+			<header data-role="header">
+				<!-- 
+					data-iconpos="notext" DEJA SOLO EL ICONO DEL BOTON SIN TEXTO
+					href="javascript:window.history.back();" VUELVE ATRÁS
+				-->
+				<a href="javascript:window.history.back();" data-role="button" data-icon="home"> Inicio </a>
+				Bodegas
+			</header>
+			<div class="content" data-role="content">
+				<p>
+				La bodegas con más de 250 años de antigüedad se encontraban excavadas a mano y orientas al norte para conservar temperatura y humedad.
+				</p>
+				<img width="80%" src="./img/contenidos/bodegas.jpg">
+				<p>
+				Cada viticultor elaboraba su vino de forma artesanal, se pisaban las uvas, y con el raspón incluido se pasaban a fermentar. Desnudos se introducían en el lagar para remover el mosto y los orujos. Una vez acabada la fermentación se separaba el vino y se introducía en depósitos de cemento o toneles de cerezo de 600 hasta 1500 litros, el resto de orujos se prensaba en prensas manuales para extraer el vino.
+				</p>
+				<p>
+				Después venían los compradores y fijaban el precio por “cantarás”.
+				</p>
+				<p>
+				Así se funcionó hasta la creación de las Cooperativas allá por los años 50. Hoy en día son testimonio de la historia y la cultura del vino en nuestra zona.
+				</p>
+				
+			</div>
+		</section>
+		
+		<!-- Página explicatoria de los servicios que ofrecemos-->
+		<section id="catalogo" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="home"> Inicio </a>
+				Vinos
+			</header>
+			<div class="content" data-role="content">
+					<div class="producto">
+						<a href="#armantes" data-rel="dialog"><img src="./img/contenidos/armantes.png"> </a>
+					</div>
+					<div class="producto">
+						<a href="#atteca" data-rel="dialog"><img src="./img/contenidos/atteca.png"> </a>
+					</div>
+					<div class="producto">
+						<a href="#baltasar" data-rel="dialog"><img src="./img/contenidos/baltasar.png"> </a>
+					</div>
+					<div class="producto">
+						<a href="#cruzdepiedra" data-rel="dialog"><img src="./img/contenidos/cruzdepiedra.png"> </a>
+					</div>
+					<div class="producto">
+						<a href="#domyago" data-rel="dialog"><img src="./img/contenidos/domyago.png"> </a>
+					</div>
+					<div class="producto">
+						<a href="#estecillo" data-rel="dialog"><img src="./img/contenidos/estecillo.png"> </a>
+					</div>
+					<!--
+					<div class="producto">
+						<img src="./img/contenidos/langa.png">
+					</div>
+					<div class="producto">
+						<img src="./img/contenidos/lug2.png">
+					</div>
+					<div class="producto">
+						<img src="./img/contenidos/muzares.png">
+					</div>
+					<div class="producto">
+						<img src="./img/contenidos/pizarras.png">
+					</div>
+					<div class="producto">
+						<img src="./img/contenidos/roquecolas.png">
+					</div>
+					<div class="producto">
+						<img src="./img/contenidos/samitier1.png">
+					</div>
+					<div class="producto">
+						<img src="./img/contenidos/stylo.png">
+					</div>
+					<div class="producto">
+						<img src="./img/contenidos/tranquera.png">
+					</div>
+					-->
+					
+			</div>
+		</section>
+		
+		<!-- Página para ver ficha del vino-->
+		<section id="armantes" data-role="page" data-theme="d">
+			<header data-role="header" class="encabezado_ficha">
+				Armantes: Bodegas San Gregorio
+			</header>
+			<div class="content_ficha" data-role="content">
+				<img style="float:left" width="15%" src="./img/contenidos/armantes.png">
+				<p>
+				Ctra. de Villaluenga, s/n · 50312 Cervera de la Cañada. Zaragoza <br>
+				Tel. 976 899 206 · Fax 976 896 240<br>
+				www.bodegassangregorio.com
+				</p>
+				<p>
+				La Bodega San Gregorio fue fundada en 1965 en Cervera de la Cañada y pertenece a la Denominación de Origen de Calatayud. En esta región, situada en las estribaciones del sistema Ibérico, es donde seleccionamos las mejores uvas del valle del Ribota, la zona más occidental de la denominación.
+				</p>
+			</div>
+		</section>
+		
+		<!-- Página para ver ficha del vino-->
+		<section id="atteca" data-role="page" data-theme="d">
+			<header data-role="header" class="encabezado_ficha">
+				Atteca: Bodegas Ateca
+			</header>
+			<div class="content_ficha" data-role="content">
+				<img style="float:left" width="15%" src="./img/contenidos/atteca.png">
+				<p>
+				Carretera Nacional II, km 221 · 50220 Ateca. Zaragoza<br>
+				Tel. 661 419 719<br>
+				www.gilfamily.es
+				</p>
+				<p>
+				Bodegas Ateca tiene su base de operaciones en Ateca a 14 kilómetros de Calatayud.
+				</p>
+				<p>
+				El viñedo, plantado sobre suelos de pizarra en los parajes de mayor altitud de la zona está compuesto fundamentalmente por pequeñas parcelas de viñas viejas de la variedad garnacha (algunas de principios del Siglo XX) y se sitúa en torno a las laderas de los montes de Ateca y los pueblos de alrededor.
+				</p>
+			</div>
+		</section>
+		
+		<!-- Página para ver ficha del vino-->
+		<section id="baltasar" data-role="page" data-theme="d">
+			<header data-role="header" class="encabezado_ficha">
+				Baltasar: Bodegas San Alejandro
+			</header>
+			<div class="content_ficha" data-role="content">
+				<img style="float:left" width="15%" src="./img/contenidos/baltasar.png">
+				<p>
+				Ctra. Calatayud-Cariñena, km 16,4 · 50330 Miedes de Aragón. Zaragoza<br>
+				Tel. 976 892 205 · Fax 976 890 540<br>
+				www.san-alejandro.com
+				</p>
+				<p>
+				Fundada en 1962 con una superficie de viñedo aproximada de 1.000 has se encuentra en Miedes a 88 km al sudeste de Zaragoza.
+				</p>
+				<p>
+				De claro espíritu exportador y formada por un equipo joven y dinámico vende a más de 25 países el 95% de su producción bajo diferentes marcas, principalmente Baltasar Gracián, Las Rocas, Viñas de Miedes y Evodia.
+				</p>
+
+			</div>
+		</section>
+		
+		<!-- Página para ver ficha del vino-->
+		<section id="cruzdepiedra" data-role="page" data-theme="d">
+			<header data-role="header" class="encabezado_ficha">
+				Cruz de Piedra: Bodegas Virgen de la Sierra
+			</header>
+			<div class="content_ficha" data-role="content">
+				<img style="float:left" width="15%" src="./img/contenidos/cruzdepiedra.png">
+				<p>
+				Avda. de la Cooperativa 21-23 · 50310 Villarroya de la Sierra. Zaragoza<br>
+				Tel. 976 899 015 · Fax 976 899 132<br>
+				www.bodegavirgendelasierra.com
+				</p>
+				<p>
+				Bodega Cooperativa Virgen de la Sierra tiene el honor de ser una de las primeras Cooperativas de Aragón. Fundada en 1954, con el esfuerzo de muchos se consiguió levantar un edificio que representara no sólo las ganas de trabajar y de esfuerzo, sino el ánimo emprendedor para hacer algo nuevo, diferente…
+				</p>
+			</div>
+		</section>
+		
+		<!-- Página para ver ficha del vino-->
+		<section id="domyago" data-role="page" data-theme="d">
+			<header data-role="header" class="encabezado_ficha">
+				Dom Yago: Bodegas Valdepablo
+			</header>
+			<div class="content_ficha" data-role="content">
+				<img style="float:left" width="15%" src="./img/contenidos/domyago.png">
+				<p>
+				Camino de Calatayud, s/n · 50293 Terrer. Zaragoza<br>
+				Tel. 976 898 400 · Fax 976 898 401<br>
+				www.valdepablo.com<br>
+				</p>
+				<p>
+				Los orígenes de Bodegas Valdepablo se remontan al año 1928 cuando en Calatayud (Zaragoza) Juan Manuel Pablo fundó la bodega y comenzó así la andadura de una familia unida al mundo del vino.
+				</p>
+				Desde entonces, la familia Pablo, generación tras generación, ha ido transmitiendo el secreto de la elaboración de sus caldos y el amor al vino.
+				</p>
+			</div>
+		</section>
+		
+		<!-- Página para ver ficha del vino-->
+		<section id="estecillo" data-role="page" data-theme="d">
+			<header data-role="header" class="encabezado_ficha">
+				Estecillo: Bodegas Niño Jesus
+			</header>
+			<div class="content_ficha" data-role="content">
+				<img style="float:left" width="15%" src="./img/contenidos/estecillo.png">
+				<p>				
+				C. Las Tablas s/n · 50313 Aniñón. Zaragoza<br>
+				Tel. 976 899 150 · Fax 976 896 160<br>
+				www.satninojesus.com
+				</p>
+				<p>
+				La SAT 2563 Niño Jesus, creada en 1978 en Aniñón, se dedica dentro de la denominación de origen Calatayud a la elaboración de vinos de calidad, su variedad principal en uvas tintas es la garnacha, y en uvas blascas macabeo.
+				</p>
+				<p>
+				Los viñedos situados a una altitud de entre 650 y 880 m, con importantes diferencias térmicas entre el día y la noche, con pluviometría escasa y suelos pedregosos, nos permiten obtener vinos de gran calidad.
+				</p>
+
+			</div>
+		</section>
+		
+		<!-- Página para ver el video presentación-->
+		<section id="presentacion" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="home"> Inicio </a>
+				Presentación
+			</header>
+			<div class="content" data-role="content">
+				<iframe width="98%" height="80%" src="http://www.youtube.com/embed/lAu-WRF_pEg" frameborder="0" allowfullscreen></iframe>
+				<br>
+				<small>Para ver el video pulsa sobre la imagen </small>
+			</div>
+		</section>
+		
+		
+		<!-- Página para ver el mapa-->
+		<section id="localizacion" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="home"> Inicio </a>
+				Mapa
+			</header>
+			<div class="content" data-role="content">
+				
+				<!-- OJO! para incluir div (por ejemplo el del mapa) adicionales asegurarse de que estan dentro de CONTENT!! si no no me funciona -->
+				<iframe width="80%" height="70%"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Ctra.+de+Valencia,+8+50300+Calatayud,+Zaragoza,+Espa%C3%B1a&amp;aq=&amp;sll=40.396764,-3.713379&amp;sspn=9.015824,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=Carretera+Valencia,+8,+Calatayud,+Zaragoza&amp;t=m&amp;ll=41.356711,-1.652327&amp;spn=0.022549,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+				<br>
+				<a class="enlacemapa" href="https://maps.google.es/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Ctra.+de+Valencia,+8+50300+Calatayud,+Zaragoza,+Espa%C3%B1a&amp;aq=&amp;sll=40.396764,-3.713379&amp;sspn=9.015824,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=Carretera+Valencia,+8,+Calatayud,+Zaragoza&amp;ll=41.343173,-1.641343&amp;spn=0.008683,0.021136&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">Ver Mapa en Google</a>
+			
+			</div>
+		</section>
+		
+		
+		<!-- Página para ver las rutas-->
+		<section id="rutas" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="home"> Inicio </a>
+				Rutas del vino
+			</header>
+			<div class="content" data-role="content">
+				<div data-role="controlgroup">
+					<a href="#rio_jiloca" data-role="button" data-icon="search" data-iconpos="right">Ruta del río Jiloca</a>
+					<a href="#rio_piedra" id="rutapiedra" data-role="button" data-icon="search" data-iconpos="right">Ruta del río Piedra</a>
+					<a href="#rio_ribota" data-role="button" data-icon="search" data-iconpos="right">Ruta del río Ribota</a>
+					<a href="#rio_perejiles" data-role="button" data-icon="search" data-iconpos="right">Ruta del río Perejiles</a>
+					<a href="#ruta_calatayud" data-role="button" data-icon="search" data-iconpos="right">Ruta de Calatayud</a>
+					
+				</div>
+			</div>
+		</section>
+		
+		<!-- Página RUTA RIO JILOCA-->
+		<section id="rio_jiloca" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="arrow-l"> Rutas </a>
+				Ruta del río Jiloca
+			</header>
+			<div class="content" data-role="content">
+				<iframe width="90%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5ac63fcfa49a4dac&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=41.364442,-1.809311&amp;spn=0.18037,0.291824&amp;z=11&amp;output=embed"></iframe>
+				<br>
+				<img class="icono_mapa" src="./img/icono_e.png"> <span class="icono_mapa_txt">Sede</span>
+				<img class="icono_mapa" src="./img/icono_i.png"> <span class="icono_mapa_txt">Suelo</span>
+				<img class="icono_mapa" src="./img/icono_b.png"> <span class="icono_mapa_txt">Bodega</span>
+				<img class="icono_mapa" src="./img/icono_f.png"> <span class="icono_mapa_txt">Lugar</span>
+				<img class="icono_mapa" src="./img/icono_a.png"> <span class="icono_mapa_txt">Balneario</span>
+				<br>
+				<a class="enlacemapa" href="https://maps.google.com/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5ac63fcfa49a4dac&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=41.364442,-1.809311&amp;spn=0.18037,0.291824&amp;z=11&amp;source=embed" style="color:#0000FF;text-align:left">Ver Mapa en Google</a>
+				
+				
+			</div>
+		</section>
+		
+		<!-- Página RUTA RIO PIEDRA-->
+		<section id="rio_piedra" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="arrow-l"> Rutas </a>
+				Ruta del río Piedra
+			</header>
+			<div class="content" data-role="content">
+				<iframe width="90%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=214952047908117270817.0004d59947079f9d451d5&amp;ie=UTF8&amp;t=m&amp;ll=41.374748,-1.995392&amp;spn=0.180341,0.291824&amp;z=11&amp;output=embed"></iframe>
+				<br>
+				<br>
+				<img class="icono_mapa" src="./img/icono_e.png"> <span class="icono_mapa_txt">Sede</span>
+				<img class="icono_mapa" src="./img/icono_i.png"> <span class="icono_mapa_txt">Suelo</span>
+				<img class="icono_mapa" src="./img/icono_b.png"> <span class="icono_mapa_txt">Bodega</span>
+				<img class="icono_mapa" src="./img/icono_f.png"> <span class="icono_mapa_txt">Lugar</span>
+				<img class="icono_mapa" src="./img/icono_a.png"> <span class="icono_mapa_txt">Balneario</span>
+				<br>
+				<a class="enlacemapa" href="https://maps.google.es/maps/ms?msa=0&amp;msid=214952047908117270817.0004d59947079f9d451d5&amp;ie=UTF8&amp;t=m&amp;ll=41.374748,-1.995392&amp;spn=0.180341,0.291824&amp;z=11&amp;source=embed" style="color:#0000FF;text-align:left">Ver Mapa en Google</a>
+				
+			</div>
+		</section>
+		
+		<!-- Página RUTA RIO RIBOTA-->
+		<section id="rio_ribota" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="arrow-l"> Rutas </a>
+				Ruta del río Ribota
+			</header>
+			<div class="content" data-role="content">
+				<iframe width="90%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5abfea8405d66705&amp;ie=UTF8&amp;t=m&amp;ll=41.492121,-1.82888&amp;spn=0.090008,0.145912&amp;z=12&amp;output=embed"></iframe>
+				<br>
+				<br>
+				<img class="icono_mapa" src="./img/icono_e.png"> <span class="icono_mapa_txt">Sede</span>
+				<img class="icono_mapa" src="./img/icono_i.png"> <span class="icono_mapa_txt">Suelo</span>
+				<img class="icono_mapa" src="./img/icono_b.png"> <span class="icono_mapa_txt">Bodega</span>
+				<img class="icono_mapa" src="./img/icono_f.png"> <span class="icono_mapa_txt">Lugar</span>
+				<img class="icono_mapa" src="./img/icono_a.png"> <span class="icono_mapa_txt">Balneario</span>
+				<br>
+				<a class="enlacemapa" href="https://maps.google.es/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5abfea8405d66705&amp;ie=UTF8&amp;t=m&amp;z=12&amp;source=embed" style="color:#0000FF;text-align:left">Ver Mapa en Google</a>
+			</div>
+		</section>
+		
+		
+		
+		<!-- Página RUTA RIO PEREJILES-->
+		<section id="rio_perejiles" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="arrow-l"> Rutas </a>
+				Ruta del río Perejiles
+			</header>
+			<div class="content" data-role="content">
+				<iframe width="90%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5ace5081faea05ae&amp;ie=UTF8&amp;t=m&amp;ll=41.34434,-1.599197&amp;spn=0.090213,0.145912&amp;z=12&amp;output=embed"></iframe>
+				<br>
+				<br>
+				<img class="icono_mapa" src="./img/icono_e.png"> <span class="icono_mapa_txt">Sede</span>
+				<img class="icono_mapa" src="./img/icono_i.png"> <span class="icono_mapa_txt">Suelo</span>
+				<img class="icono_mapa" src="./img/icono_b.png"> <span class="icono_mapa_txt">Bodega</span>
+				<img class="icono_mapa" src="./img/icono_f.png"> <span class="icono_mapa_txt">Lugar</span>
+				<img class="icono_mapa" src="./img/icono_a.png"> <span class="icono_mapa_txt">Balneario</span>
+				<br>
+				<a class="enlacemapa" href="https://maps.google.com/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5ace5081faea05ae&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=41.361865,-1.628723&amp;spn=0.180377,0.291824&amp;z=11&amp;source=embed" style="color:#0000FF;text-align:left">Ver Mapa en Google</a>
+			</div>
+		</section>
+		
+		<!-- Página RUTA CALATAYUD-->
+		<section id="ruta_calatayud" data-role="page" data-theme="d">
+			<header data-role="header">
+				<a href="javascript:window.history.back();" data-role="button" data-icon="arrow-l"> Rutas </a>
+				Ruta de Calatayud
+			</header>
+			<div class="content" data-role="content">
+				<iframe width="90%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5ad1e3faec87ad75&amp;ie=UTF8&amp;t=m&amp;ll=41.37887,-1.737213&amp;spn=0.090165,0.145912&amp;z=12&amp;output=embed"></iframe>
+				<br>
+				<br>
+				<img class="icono_mapa" src="./img/icono_e.png"> <span class="icono_mapa_txt">Sede</span>
+				<img class="icono_mapa" src="./img/icono_i.png"> <span class="icono_mapa_txt">Suelo</span>
+				<img class="icono_mapa" src="./img/icono_b.png"> <span class="icono_mapa_txt">Bodega</span>
+				<img class="icono_mapa" src="./img/icono_f.png"> <span class="icono_mapa_txt">Lugar</span>
+				<img class="icono_mapa" src="./img/icono_a.png"> <span class="icono_mapa_txt">Balneario</span>
+				<br>
+				<a class="enlacemapa" href="https://maps.google.es/maps/ms?msa=0&amp;msid=214952047908117270817.0004d5ad1e3faec87ad75&amp;ie=UTF8&amp;t=m&amp;ll=41.459195,-1.822357&amp;spn=0.360214,0.583649&amp;z=10&amp;source=embed" style="color:#0000FF;text-align:left">Ver Mapa en Google</a> 
+			</div>
+		</section>
+		
+		
+	
+	</body>
+</html>
